@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeRandomizer : CubeBehaviour
+public class Cube2ChildScript : CubeBehaviour
 {
-
-    private float newRotationSpeedY = 35.0f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +16,8 @@ public class CubeRandomizer : CubeBehaviour
       CubeRotation();
     }
 
-    //private void OnMouseDown()
-    //{
-
-    //}
+    public override void SetColor()
+    {
+      gameObject.GetComponent<Renderer>().material.color = Color.red;
+    }
 }
