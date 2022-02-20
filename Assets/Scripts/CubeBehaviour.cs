@@ -5,6 +5,7 @@ using UnityEngine;
 public class CubeBehaviour : MonoBehaviour
 {
 
+    //DEMONSTRATION OF ENCAPSULATION
     public static float rotationSpeedY = 10.0f;
     public static float rotationSpeedX { get; }
     public static float rotationSpeedZ { get; }
@@ -21,6 +22,7 @@ public class CubeBehaviour : MonoBehaviour
       CubeRotation();
     }
 
+    // DEMONSTRATION OF ABSTRACTION
     public virtual void SetColor()
     {
       gameObject.GetComponent<Renderer>().material.color = Color.green;

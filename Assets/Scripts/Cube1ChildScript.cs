@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// DEMONSTRATION OF INHERITANCE
 public class Cube1ChildScript : CubeBehaviour
 {
 
@@ -19,6 +20,7 @@ public class Cube1ChildScript : CubeBehaviour
       CubeRotation();
     }
 
+    // DEMONSTRATION OF POLYMORPHISM
     public override void CubeRotation()
     {
       transform.Rotate(rotationSpeedX, newRotationSpeedY * Time.deltaTime, rotationSpeedZ);

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// DEMONSTRATION OF INHERITANCE
 public class Cube3ChildScript : CubeBehaviour
 {
 
@@ -21,6 +22,7 @@ public class Cube3ChildScript : CubeBehaviour
       CubeRotation();
     }
 
+    // DEMONSTRATION OF POLYMORPHISM
     public override void SetColor()
     {
       gameObject.GetComponent<Renderer>().material.color = Color.blue;
